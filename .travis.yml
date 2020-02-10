@@ -9,5 +9,7 @@ android:
 dist: trusty
 jdk: oraclejdk8
 
-script: ./gradlew ktlintCheck testDebug 
+script: 
+    - ./gradlew ktlintCheck testDebug
+    - ./gradlew assembleRelease
 
